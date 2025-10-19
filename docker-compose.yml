@@ -5,6 +5,7 @@ services:
   tftp:
     image: danrue/tftpd-hpa:latest
     container_name: netboot_tftp
+    hostname: netboot_tftp
     restart: unless-stopped
     network_mode: host
     volumes:
@@ -14,6 +15,7 @@ services:
   http:
     image: nginx:alpine
     container_name: netboot_http
+    hostname: netboot_http
     restart: unless-stopped
     network_mode: host
     # ports:
