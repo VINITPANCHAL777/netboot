@@ -9,6 +9,9 @@
 ## Installation
 #### 1. Set HOST and DEFAULT_ISO in `.env`
 ```bash
+
+
+
 nano .env
 ```
 ```bash
